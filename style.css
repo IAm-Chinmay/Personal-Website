@@ -142,10 +142,10 @@ body{
     transition: transform 0.4s ease-in-out;
   }
 
-  a{
+  .links{
     position: relative;
   }
-  a::before {
+  .links::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -159,7 +159,7 @@ body{
     transition: transform .3s ease-in-out;
   }
 
-  a:hover::before {
+  .links:hover::before {
     transform-origin: left;
     transform: scaleX(1);
   }
@@ -179,8 +179,8 @@ body{
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
     text-align: center;
-    background-color: rgba(199, 199, 199, 0.86)
-    
+    background-color: rgba(199, 199, 199, 0.86);
+    z-index : 1;
   }
 
   .menu-items{
